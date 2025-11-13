@@ -1,0 +1,28 @@
+#Entering container
+
+conda activate softgym
+
+docker run \
+    -v /home/koghalai/softagent/softgym:/workspace/softgym \
+    -v /home/koghalai/miniconda3:/home/koghalai/miniconda3 \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e DISPLAY=$DISPLAY \
+    -e QT_X11_NO_MITSHM=1 \
+    -it xingyu/softgym:latest bash
+
+
+#Compiling within docker
+cd softgym/
+export PATH="/home/koghalai/miniconda3/bin:$PATH"
+. ./prepare_1.0.sh
+
+
+
+
+
+
+
+
+
+
+
