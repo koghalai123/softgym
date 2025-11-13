@@ -47,5 +47,7 @@ pip install imageio-ffmpeg==0.3.0
 sudo prime-select nvidia
 
 
+# If FileNotFoundError: The directory '/home/koghalai/softagent/softgym/data' does not exist
 
+Then creata a 'data' folder in the softgym folder
 
