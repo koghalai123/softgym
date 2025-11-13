@@ -1,6 +1,7 @@
 # MUST USE OLD VERSION OF MINICONDA or you will run into a glibc version mismatch. I used one from 2023
 
 sudo apt-get install build-essential libgl1-mesa-dev freeglut3-dev libglfw3 libgles2-mesa-dev
+conda env create -f environment.yml
 
 
 #Entering container
