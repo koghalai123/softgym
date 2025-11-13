@@ -47,14 +47,11 @@ pip install imageio-ffmpeg==0.3.0
 sudo prime-select nvidia
 
 
-# you must install 'bazel' version 6.0.0 before moving onto conda dependencies for softagent
+# you must install 'bazel' version 5.0.0 before moving onto conda dependencies for softagent
 
-wget https://github.com/bazelbuild/bazel/releases/download/6.0.0/bazel-6.0.0-linux-x86_64
-
-chmod +x bazel-6.0.0-linux-x86_64
-
-sudo mv bazel-6.0.0-linux-x86_64 /usr/local/bin/bazel
-
+wget https://github.com/bazelbuild/bazel/releases/download/5.0.0/bazel-5.0.0-linux-x86_64
+chmod +x bazel-5.0.0-linux-x86_64
+sudo mv bazel-5.0.0-linux-x86_64 /usr/local/bin/bazel
 bazel version
 
 # If FileNotFoundError: The directory '/home/koghalai/softagent/softgym/data' does not exist
