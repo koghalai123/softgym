@@ -47,7 +47,29 @@ pip install imageio-ffmpeg==0.3.0
 sudo prime-select nvidia
 
 
+# you must install 'bazel' version 6.0.0 before moving onto conda dependencies for softagent
+
+wget https://github.com/bazelbuild/bazel/releases/download/6.0.0/bazel-6.0.0-linux-x86_64
+
+chmod +x bazel-6.0.0-linux-x86_64
+
+sudo mv bazel-6.0.0-linux-x86_64 /usr/local/bin/bazel
+
+bazel version
+
 # If FileNotFoundError: The directory '/home/koghalai/softagent/softgym/data' does not exist
 
 Then creata a 'data' folder in the softgym folder
 
+# when updating conda env to be used with soft agent, you might get this error:
+
+ResolvePackageNotFound: 
+  - gtimer
+  - sk-video
+  - imageio-ffmpeg
+  - opencv-python=5.1.1
+  - moviepy
+  - gym=0.14.0
+  - pyquaternion=0.9.5
+
+You need to move the bad dependencies to pip. LLMs did a reasonable job of this 
