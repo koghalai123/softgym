@@ -46,6 +46,7 @@ pip install imageio-ffmpeg==0.3.0
 
 sudo prime-select nvidia
 
+# TEST SOFTGYM HERE TO ENSURE IT IS WORKING BEFORE MOVING ON
 
 # you must install 'bazel' version 5.0.0 before moving onto conda dependencies for softagent
 
