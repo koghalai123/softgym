@@ -26,9 +26,19 @@ export PYTHONPATH=${PYFLEXROOT}/bindings/build:$PYTHONPATH
 export LD_LIBRARY_PATH=${PYFLEXROOT}/external/SDL2-2.0.4/lib/x64:$LD_LIBRARY_PATH
 ```
 
+# If softgym module cannot be found
 
+export PYTHONPATH=$(pwd):$PYTHONPATH
 
+# If this error occurs: 
 
+File "/home/koghalai/miniconda3/envs/softgym/lib/python3.6/site-packages/imageio_ffmpeg/_utils.py", line 6, in <module>
+    import importlib.resources
+ModuleNotFoundError: No module named 'importlib.resources'
 
+# then
+
+pip uninstall imageio-ffmpeg
+pip install imageio-ffmpeg==0.3.0
 
 
