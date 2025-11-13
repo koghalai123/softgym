@@ -1,4 +1,4 @@
-# MUST USE OLD VERSION OF MINICONDA or you will run into a glibc version mismatch
+# MUST USE OLD VERSION OF MINICONDA or you will run into a glibc version mismatch. I used one from 2023
 
 #Entering container
 
