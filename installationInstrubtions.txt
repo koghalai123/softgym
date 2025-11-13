@@ -1,8 +1,13 @@
 # MUST USE OLD VERSION OF MINICONDA or you will run into a glibc version mismatch. I used one from 2023
 
+sudo apt-get install build-essential libgl1-mesa-dev freeglut3-dev libglfw3 libgles2-mesa-dev
+
+
 #Entering container
 
 conda activate softgym
+conda install pybind11
+
 
 docker run \
     -v /home/koghalai/softagent/softgym:/workspace/softgym \
@@ -17,6 +22,7 @@ docker run \
 cd softgym/
 export PATH="/home/koghalai/miniconda3/bin:$PATH"
 . ./prepare_1.0.sh
+. ./compile_1.0.sh
 
 # Run in each new terminal window: 
 
