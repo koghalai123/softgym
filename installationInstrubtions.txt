@@ -42,3 +42,10 @@ pip uninstall imageio-ffmpeg
 pip install imageio-ffmpeg==0.3.0
 
 
+# If there is an issue with: extension `GL_EXT_geometry_shader4' unsupported in geometry shader
+
+sudo prime-select nvidia
+
+
+
+
